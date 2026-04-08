@@ -186,3 +186,148 @@
     </figcaption>
   </figure>
 </section>
+
+<section id="contact">
+        <h2>Contact Me</h2>
+
+        <h3>Get in Touch</h3>
+        <p>
+          Please fill out the form below to reach out for collaborations or
+          inquiries.
+        </p>
+
+        <form action="#" method="post">
+          <fieldset style="border: 2px solid #333; padding: 20px">
+            <legend><strong>Inquiry Form</strong></legend>
+
+            <p>
+              <label for="full-name">Full Name:</label><br />
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="Hebatulla Omer"
+                style="font-size: 16px"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="user-email">Email Address:</label><br />
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder="example@utm.my"
+                style="background-color: #e8f0fe"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="phone">Phone Number:</label><br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="012-3456789"
+              />
+            </p>
+
+            <p>
+              <label for="age">Age (18-60):</label><br />
+              <input type="number" id="age" name="age" min="18" max="60" />
+            </p>
+
+            <p>
+              <label for="pref-date">Preferred Meeting Date:</label><br />
+              <input type="date" id="pref-date" name="pref-date" />
+            </p>
+
+            <p>
+              <label for="satisfaction">Expected Response Urgency (1-10):</label
+              ><br />
+              <input
+                type="range"
+                id="satisfaction"
+                name="satisfaction"
+                min="1"
+                max="10"
+              />
+            </p>
+
+            <p>
+              <label for="subject">Subject:</label><br />
+              <select id="subject" name="subject">
+                <optgroup label="General">
+                  <option value="feedback">Feedback</option>
+                  <option value="question">General Question</option>
+                </optgroup>
+                <optgroup label="Professional">
+                  <option value="collaboration">Collaboration</option>
+                  <option value="hiring">Hiring</option>
+                </optgroup>
+              </select>
+            </p>
+
+            <p>Gender Identity:</p>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+
+            <p>Areas of Interest:</p>
+            <input type="checkbox" id="web-dev" name="interest" value="web" />
+            <label for="web-dev">Web Development</label>
+            <input type="checkbox" id="ui-ux" name="interest" value="uiux" />
+            <label for="ui-ux">UI/UX Design</label>
+            <input
+              type="checkbox"
+              id="software"
+              name="interest"
+              value="software"
+            />
+            <label for="software">Software Testing</label>
+
+            <p>
+              <label for="message" style="color: #2c3e50"
+                >Message (Max 200 characters):</label
+              ><br />
+              <textarea
+                id="message"
+                name="message"
+                maxlength="200"
+                rows="4"
+                placeholder="Type your message here..."
+              ></textarea>
+            </p>
+
+            <button
+              type="submit"
+              style="
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+              "
+            >
+              Submit Inquiry
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <address>
+        Email:
+        <a href="mailto:omer.abdulla@graduate.utm.my"
+          >omer.abdulla@graduate.utm.my</a
+        >
+      </address>
+      <p><small>&copy; 2026 Hebatulla Omer. All rights reserved.</small></p>
+    </footer>
+  </body>
+</html>
