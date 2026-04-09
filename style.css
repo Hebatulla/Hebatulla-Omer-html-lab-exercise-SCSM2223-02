@@ -37,3 +37,31 @@ body {
   color: var(--color-text);
   background-color: var(--color-surface);
 }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  margin-bottom: var(--space-md);
+}
+
+h1 { font-size: 3.2rem; line-height: 1.2; }
+p { font-size: 1.6rem; line-height: 1.6; margin-bottom: var(--space-md); }
+
+header {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--space-lg);
+}
+
+nav {
+  background-color: var(--color-secondary);
+  padding: var(--space-sm);
+}
+
+.project-card {
+  /* Padding: Space inside the card border */
+  padding: var(--space-md); 
+  /* Margin: Space outside the card to separate from others */
+  margin-bottom: var(--space-lg);
+  border: 1px solid var(--color-accent);
+  border-radius: 8px; /* for Task 2 */
+}
