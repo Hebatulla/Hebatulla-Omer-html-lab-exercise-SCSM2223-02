@@ -125,3 +125,75 @@ footer {
 .featured-item {
     grid-column: span 2;
 }
+
+
+
+/* Task 3: Flexbox Navigation */
+nav ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows links to wrap on small phone screens */
+    justify-content: center;
+    list-style: none;
+    padding: var(--space-sm) 0;
+    margin: 0;
+    gap: var(--space-md);
+}
+
+nav a {
+    color: white;
+    font-size: 1.4rem;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a.active {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+nav a:hover:not(.active) {
+    background-color: rgba(232, 213, 183, 0.2);
+}
+/* ============================================
+   Task 5: Responsive Design (Media Queries)
+   ============================================ */
+
+/* TABLET VIEW: 600px and up */
+@media (min-width: 600px) {
+    header {
+        text-align: center;
+        padding: var(--space-lg) var(--space-md);
+    }
+
+    h1 {
+        font-size: 4.5rem; /* Larger heading for tablets */
+    }
+
+    /* Adjusting the grid for tablet */
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* DESKTOP VIEW: 1024px and up */
+@media (min-width: 1024px) {
+    /* Making the content feel more balanced on wide screens */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+    }
+
+    /* Task 4 Sidebar Layout requirement: 
+       We use this on sub-pages like about.html later */
+    .sidebar-layout {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: var(--space-lg);
+    }
+}
