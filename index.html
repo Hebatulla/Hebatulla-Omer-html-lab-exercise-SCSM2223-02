@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Complete Portfolio of Hebatulla Omer - Software Engineering Student"
     />
     <title>Hebatulla Omer | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -17,12 +18,12 @@
 
     <nav>
       <ul>
-        <li><a href="#welcome">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#academic">Academic Results</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="academic.html">Academic Record</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
       </ul>
     </nav>
 
@@ -37,7 +38,6 @@
 
       <section id="about">
         <h2>About Me</h2>
-
         <h3>My Background</h3>
         <p>
           I am a <strong>dedicated</strong> student who enjoys
@@ -66,251 +66,100 @@
           <mark>Important:</mark> Native HTML provides the best accessibility.
         </p>
       </section>
-    </main>
-  </body>
-</html>
 
-<section id="skills">
-  <h2>Top Skills</h2>
+      <div class="card-grid">
+        <section id="skills" class="portfolio-card">
+          <h2>Top Skills</h2>
+          <h3>Skill Proficiency</h3>
+          <ol type="I" start="5">
+            <li>System Architecture</li>
+            <li>Database Management</li>
+          </ol>
+          <h3>Technologies I Use</h3>
+          <ul>
+            <li>
+              Frontend Development
+              <ul>
+                <li>HTML5</li>
+                <li>JavaScript</li>
+              </ul>
+            </li>
+          </ul>
+          <h3>Web Development Glossary</h3>
+          <dl>
+            <dt>Semantic HTML</dt>
+            <dd>Using tags that describe the meaning of the content.</dd>
+            <dt>Attribute</dt>
+            <dd>Extra information provided inside an HTML tag.</dd>
+          </dl>
+        </section>
 
-  <h3>Skill Proficiency</h3>
-  <ol type="I" start="5">
-    <li>System Architecture</li>
-    <li>Database Management</li>
-  </ol>
+        <section id="academic" class="portfolio-card">
+          <h2>Academic Record</h2>
+          <table>
+            <caption>
+              UTM Year 2 Academic Results
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Year</th>
+                <th scope="col" colspan="2">Course Details</th>
+                <th scope="col">Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" rowspan="2">Year 2</th>
+                <td>SCSM2223</td>
+                <td>Web Development</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>SCSJ2153</td>
+                <td>Comp. Org. & Arch.</td>
+                <td>A-</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="3">Total Credits</th>
+                <td>6</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
 
-  <h3>Technologies I Use</h3>
-  <ul>
-    <li>
-      Frontend Development
-      <ul>
-        <li>HTML5</li>
-        <li>JavaScript</li>
-      </ul>
-    </li>
-  </ul>
-
-  <h3>Web Development Glossary</h3>
-  <dl>
-    <dt>Semantic HTML</dt>
-    <dd>Using tags that describe the meaning of the content.</dd>
-    <dt>Attribute</dt>
-    <dd>Extra information provided inside an HTML tag.</dd>
-    <dt>Viewport</dt>
-    <dd>The user's visible area of a web page.</dd>
-    <dt>Deprecated</dt>
-    <dd>Outdated tags no longer recommended for use.</dd>
-  </dl>
-
-  <h3>Learning Priority</h3>
-  <ol reversed>
-    <li>Advanced Logic</li>
-    <li>Basic Structure</li>
-  </ol>
-</section>
-
-<section id="academic">
-  <h2>Academic Record</h2>
-  <table border="1" cellpadding="8" cellspacing="0">
-    <caption>
-      UTM Year 2 Academic Results
-    </caption>
-    <thead>
-      <tr>
-        <th scope="col">Year</th>
-        <th scope="col" colspan="2">Course Details</th>
-        <th scope="col">Grade</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row" rowspan="2">Year 2</th>
-        <td>SCSM2223</td>
-        <td>Web Development</td>
-        <td>A</td>
-      </tr>
-      <tr>
-        <td>SCSJ2153</td>
-        <td>Computer Organization And Architecture</td>
-        <td>A-</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <th scope="row" colspan="3">Total Credits Earned</th>
-        <td>6</td>
-      </tr>
-    </tfoot>
-  </table>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <h3>Personal Profile & Gallery</h3>
-
-  <figure>
-    <img
-      src="myimage.jpg"
-      alt="Professional portrait of Hebatulla Omer"
-      width="150"
-      height="150"
-      align="left"
-      title="Hebatulla Omer - Software Engineering Student"
-    />
-
-    <figcaption>Hebatulla Omer</figcaption>
-  </figure>
-
-  <p>
-    As a Software Engineering student, I focus on creating clean, efficient, and
-    accessible code. The profile photo above represents my professional
-    identity. I am passionate about solving complex problems through modular
-    design and user-centric development.
-  </p>
-
-  <div></div>
-
-  <h4>Featured Application</h4>
-  <figure>
-    <a href="https://github.com/hebatulla" target="_blank">
-      <img
-        src="https://placehold.co/400x250"
-        alt="Screenshot of a web-based task management interface featuring a sidebar and progress charts"
-        width="400"
-        height="250"
-      />
-    </a>
-    <figcaption>
-      <strong>Figure 1:</strong> A screenshot of my Task Management System.
-      Click the image to view the source code.
-    </figcaption>
-  </figure>
-</section>
-
-<section id="contact">
-        <h2>Contact Me</h2>
-
-        <h3>Get in Touch</h3>
-        <p>
-          Please fill out the form below to reach out for collaborations or
-          inquiries.
-        </p>
-
-        <form action="#" method="post">
-          <fieldset>
-            <legend><strong>Inquiry Form</strong></legend>
-
-            <p>
-              <label for="full-name">Full Name:</label><br>
-              <input
-                type="text"
-                id="full-name"
-                name="full-name"
-                placeholder="Hebatulla Omer"
-               
-                required
-              />
-            </p>
-
-            <p>
-              <label for="user-email">Email Address:</label><br>
-              <input
-                type="email"
-                id="user-email"
-                name="user-email"
-                placeholder="example@utm.my"
-                
-                required
-              />
-            </p>
-
-            <p>
-              <label for="phone">Phone Number:</label><br>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="012-3456789"
-              />
-            </p>
-
-            <p>
-              <label for="age">Age (18-60):</label><br>
-              <input type="number" id="age" name="age" min="18" max="60" />
-            </p>
-
-            <p>
-              <label for="pref-date">Preferred Meeting Date:</label><br>
-              <input type="date" id="pref-date" name="pref-date" />
-            </p>
-
-            <p>
-              <label for="satisfaction">Expected Response Urgency (1-10):</label
-              ><br>
-              <input
-                type="range"
-                id="satisfaction"
-                name="satisfaction"
-                min="1"
-                max="10"
-              />
-            </p>
-
-            <p>
-              <label for="subject">Subject:</label><br>
-              <select id="subject" name="subject">
-                <optgroup label="General">
-                  <option value="feedback">Feedback</option>
-                  <option value="question">General Question</option>
-                </optgroup>
-                <optgroup label="Professional">
-                  <option value="collaboration">Collaboration</option>
-                  <option value="hiring">Hiring</option>
-                </optgroup>
-              </select>
-            </p>
-
-            <p>Gender Identity:</p>
-            <input type="radio" id="male" name="gender" value="male" />
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female" />
-            <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="other" />
-            <label for="other">Other</label>
-
-            <p>Areas of Interest:</p>
-            <input type="checkbox" id="web-dev" name="interest" value="web" />
-            <label for="web-dev">Web Development</label>
-            <input type="checkbox" id="ui-ux" name="interest" value="uiux" />
-            <label for="ui-ux">UI/UX Design</label>
-            <input
-              type="checkbox"
-              id="software"
-              name="interest"
-              value="software"
+        <section id="projects" class="portfolio-card featured-item">
+          <h2>Featured Project</h2>
+          <figure>
+            <img
+              src="myimage.jpg"
+              alt="Professional portrait of Hebatulla Omer"
+              width="150"
+              height="150"
             />
-            <label for="software">Software Testing</label>
-
-            <p>
-              <label for="message">Message (Max 200 characters):</label><br>
-              <textarea
-                id="message"
-                name="message"
-                maxlength="200"
-                rows="4"
-                placeholder="Type your message here..."
-              ></textarea>
-            </p>
-
-            <button
-              type="submit"
-            
-            >
-              Submit Inquiry
-            </button>
-          </fieldset>
-        </form>
+            <figcaption>Hebatulla Omer</figcaption>
+          </figure>
+          <p>I focus on creating clean, efficient, and accessible code.</p>
+          <figure>
+            <a href="https://github.com/hebatulla" target="_blank">
+              <img
+                src="https://placehold.co/400x250"
+                alt="Task Management System screenshot"
+              />
+            </a>
+            <figcaption>
+              <strong>Figure 1:</strong> Task Management System.
+            </figcaption>
+          </figure>
+        </section>
+      </div>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          Ready to collaborate? Head over to the contact page to send a message.
+        </p>
+        <a href="contact.html">Go to Contact Form</a>
       </section>
     </main>
 
