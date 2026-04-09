@@ -190,7 +190,7 @@ nav a:hover:not(.active) {
     }
 
     /* Task 4 Sidebar Layout requirement: 
-       We use this on sub-pages like about.html later */
+       */
     .sidebar-layout {
         display: grid;
         grid-template-columns: 1fr 300px;
@@ -202,7 +202,7 @@ nav a:hover:not(.active) {
    Task 6: Visual Polish & Form Styling
    ============================================ */
 
-/* 1. Table Styling (:nth-child requirement) */
+/* 1. Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -288,3 +288,34 @@ h2::before {
     color: var(--color-accent);
     margin-right: 10px;
 }
+
+/* Update Typography for better readability */
+p, li, dd, dt { 
+    font-size: 1.6rem; /* Standardizes all body text to 16px equivalent */
+    line-height: 1.6; 
+    margin-bottom: var(--space-sm); 
+}
+
+/* Make glossary terms bold to stand out */
+dt {
+    font-weight: bold;
+    color: var(--color-primary);
+    margin-top: var(--space-md);
+}
+
+/* Ensure headings in sections are clear */
+h2 { font-size: 2.8rem; }
+h3 { font-size: 2.2rem; }
+
+/*Box Model for Lists */
+ul, ol, dl {
+    padding-left: var(--space-lg); /* Padding: space inside the list container */
+    margin-bottom: var(--space-md); /* Margin: space below the list */
+}
+
+section {
+    padding: var(--space-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
