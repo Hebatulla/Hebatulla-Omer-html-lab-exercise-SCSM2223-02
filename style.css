@@ -65,3 +65,38 @@ nav {
   border: 1px solid var(--color-accent);
   border-radius: 8px; /* for Task 2 */
 }
+
+/* Task 2: Additional Typography */
+small { font-size: 1.2rem; color: var(--color-muted); }
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--color-accent);
+    padding-left: var(--space-md);
+    margin: var(--space-md) 0;
+}
+
+caption {
+    font-size: 1.8rem;
+    font-family: var(--font-heading);
+    padding: var(--space-sm);
+}
+
+/* Task 2: Link States  */
+a:link { color: var(--color-accent); text-decoration: none; }
+a:visited { color: var(--color-muted); }
+a:hover { color: white; text-decoration: underline; }
+a:active { color: var(--color-secondary); }
+
+/* Task 2: Box Model components (demonstrating on 5 types) */
+footer {
+    padding: var(--space-lg); /* Space inside the footer */
+    margin-top: var(--space-lg); /* Space above the footer to separate from content  */
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Task 2: Depth and Radius 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Adds depth  */
+    background-color: white; /* Contrast for the shadow */
+}
