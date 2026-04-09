@@ -762,3 +762,156 @@ button:active { transform: translateY(0); }
 
   .featured-item { grid-column: auto; }
 }
+
+/* ============================================
+   PROJECTS PAGE
+   ============================================ */
+
+/* Intro row: circular photo left, text right */
+.projects-intro {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  background-color: var(--color-card-bg);
+  border: 1px solid rgba(232, 213, 183, 0.6);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-card);
+  margin-bottom: var(--space-lg);
+}
+
+.projects-intro .profile-fig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.projects-intro .profile-fig img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-accent);
+  box-shadow: 0 0 0 5px rgba(232, 213, 183, 0.2);
+}
+
+.projects-intro .profile-fig figcaption {
+  font-size: 1.3rem;
+  color: var(--color-muted);
+  font-style: italic;
+  margin-top: var(--space-sm);
+  text-align: center;
+}
+
+.projects-intro-text h2 {
+  margin-bottom: var(--space-sm);
+}
+
+/* Section heading */
+#projects h3 {
+  font-size: 2rem;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid rgba(232, 213, 183, 0.5);
+}
+
+/* Project card grid — Task 4 grid requirement */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+/* Individual project card */
+.project-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid rgba(232, 213, 183, 0.6);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* Equal height across the row */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Task 4 hover lift */
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.project-fig {
+  margin: 0;
+}
+
+.project-fig a {
+  display: block;
+  overflow: hidden;
+}
+
+.project-fig img {
+  /* Task 5: responsive images */
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.project-card:hover .project-fig img {
+  transform: scale(1.03);
+}
+
+.project-card-body {
+  padding: var(--space-md);
+  /* Pushes the link to the bottom of every card */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-card-body h4 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.project-card-body p {
+  font-size: 1.4rem;
+  color: var(--color-muted);
+  flex: 1;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  font-size: 1.35rem;
+  font-family: var(--font-body);
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+  padding: 7px 16px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  align-self: flex-start;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.project-link:link   { color: var(--color-primary); }
+.project-link:visited { color: var(--color-muted); border-color: var(--color-muted); }
+.project-link:hover  { background-color: var(--color-primary); color: white; text-decoration: none; }
+.project-link:active { background-color: var(--color-secondary); color: white; }
+
+/* Responsive: stack intro on mobile */
+@media (max-width: 600px) {
+  .projects-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
