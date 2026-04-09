@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Complete Portfolio of Hebatulla Omer - Software Engineering Student"
-    />
+    <meta name="description" content="Complete Portfolio of Hebatulla Omer - Software Engineering Student" />
     <title>Hebatulla Omer | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header>
-      <h1>Hebatulla Omer</h1>
-      <p>Software Engineering student at UTM - Portfolio</p>
+      <div class="header-inner">
+        <div class="header-tag">Software Engineering · UTM</div>
+        <h1>Hebatulla Omer</h1>
+        <p class="header-sub">Building clean, accessible, and meaningful digital experiences.</p>
+      </div>
     </header>
 
     <nav>
@@ -28,82 +32,79 @@
     </nav>
 
     <main>
-      <section id="welcome">
+
+      <section id="welcome" class="welcome-section">
         <h2>Welcome to my Portfolio</h2>
-        <p>
-          This document serves as a comprehensive showcase of my Application
-          development foundations.
-        </p>
+        <p>A comprehensive showcase of my application development foundations, academic achievements, and technical skills.</p>
       </section>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <h3>My Background</h3>
-        <p>
-          I am a <strong>dedicated</strong> student who enjoys
-          <em>learning</em>. I also spend time <b>coding</b> and
-          <i>designing</i> interfaces.
-        </p>
-
-        <h4>Inspirational Quotes</h4>
-        <blockquote cite="https://www.winstonchurchill.org">
-          "Success is not final, failure is not fatal: it is the courage to
-          continue that counts."
-        </blockquote>
-        <p>— <cite>Winston Churchill</cite></p>
-
-        <p>
-          I specialize in
-          <abbr title="HyperText Markup Language">HTML</abbr> and
-          <dfn>Web Development</dfn>.
-        </p>
-        <p>
-          Chemical Property: H<sub>2</sub>O | Math: x<sup>2</sup> + y<sup
-            >2</sup
-          >
-        </p>
-        <p>
-          <mark>Important:</mark> Native HTML provides the best accessibility.
-        </p>
+      <section id="about" class="about-section">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <h3>My Background</h3>
+            <p>I am a <strong>dedicated</strong> student who enjoys <em>learning</em>. I also spend time <b>coding</b> and <i>designing</i> interfaces.</p>
+            <p>I specialize in <abbr title="HyperText Markup Language">HTML</abbr> and <dfn>Web Development</dfn>.</p>
+            <p><mark>Important:</mark> Native HTML provides the best accessibility.</p>
+          </div>
+          <blockquote class="about-quote" cite="https://www.winstonchurchill.org">
+            <p>"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
+            <footer>— <cite>Winston Churchill</cite></footer>
+          </blockquote>
+        </div>
       </section>
 
+      <!-- THREE CARDS IN ONE ROW -->
       <div class="card-grid">
+
         <section id="skills" class="portfolio-card">
-          <h2>Top Skills</h2>
+          <div class="card-header">
+            <span class="card-icon">◈</span>
+            <h2>Top Skills</h2>
+          </div>
+
           <h3>Skill Proficiency</h3>
-          <ol type="I" start="5">
-            <li>System Architecture</li>
-            <li>Database Management</li>
-          </ol>
-          <h3>Technologies I Use</h3>
-          <ul>
+          <ol type="I" start="5" class="skill-list">
             <li>
-              Frontend Development
-              <ul>
-                <li>HTML5</li>
-                <li>JavaScript</li>
-              </ul>
+              <span class="skill-label">System Architecture</span>
+              <span class="skill-bar"><span style="width: 85%"></span></span>
             </li>
-          </ul>
-          <h3>Web Development Glossary</h3>
-          <dl>
+            <li>
+              <span class="skill-label">Database Management</span>
+              <span class="skill-bar"><span style="width: 78%"></span></span>
+            </li>
+          </ol>
+
+          <h3>Technologies</h3>
+          <div class="tech-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Frontend Dev</span>
+          </div>
+
+          <h3>Glossary</h3>
+          <dl class="glossary">
             <dt>Semantic HTML</dt>
-            <dd>Using tags that describe the meaning of the content.</dd>
+            <dd>Tags that describe the meaning of content.</dd>
             <dt>Attribute</dt>
-            <dd>Extra information provided inside an HTML tag.</dd>
+            <dd>Extra information inside an HTML tag.</dd>
           </dl>
         </section>
 
         <section id="academic" class="portfolio-card">
-          <h2>Academic Record</h2>
+          <div class="card-header">
+            <span class="card-icon">◈</span>
+            <h2>Academic Record</h2>
+          </div>
+
+          <p class="card-meta">UTM Year 2 Results</p>
           <table>
-            <caption>
-              UTM Year 2 Academic Results
-            </caption>
+            <caption>Year 2 Academic Results</caption>
             <thead>
               <tr>
                 <th scope="col">Year</th>
-                <th scope="col" colspan="2">Course Details</th>
+                <th scope="col">Code</th>
+                <th scope="col">Course</th>
                 <th scope="col">Grade</th>
               </tr>
             </thead>
@@ -112,66 +113,70 @@
                 <th scope="row" rowspan="2">Year 2</th>
                 <td>SCSM2223</td>
                 <td>Web Development</td>
-                <td>A</td>
+                <td><span class="grade grade-a">A</span></td>
               </tr>
               <tr>
                 <td>SCSJ2153</td>
-                <td>Comp. Org. & Arch.</td>
-                <td>A-</td>
+                <td>Comp. Org. &amp; Arch.</td>
+                <td><span class="grade grade-aminus">A−</span></td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
                 <th scope="row" colspan="3">Total Credits</th>
-                <td>6</td>
+                <td><strong>6</strong></td>
               </tr>
             </tfoot>
           </table>
+
+          <div class="gpa-badge">
+            <span class="gpa-label">Credits Earned</span>
+            <span class="gpa-value">6</span>
+          </div>
         </section>
 
         <section id="projects" class="portfolio-card featured-item">
-          <h2>Featured Project</h2>
-          <figure>
-            <img
-              src="myimage.jpg"
-              alt="Professional portrait of Hebatulla Omer"
-              width="150"
-              height="150"
-            />
+          <div class="card-header">
+            <span class="card-icon">◈</span>
+            <h2>Featured Project</h2>
+          </div>
+
+          <figure class="profile-fig">
+            <img src="myimage.jpg" alt="Professional portrait of Hebatulla Omer" width="100" height="100" />
             <figcaption>Hebatulla Omer</figcaption>
           </figure>
+
           <p>I focus on creating clean, efficient, and accessible code.</p>
-          <figure>
-            <a href="https://github.com/hebatulla" target="_blank">
-              <img
-                src="https://placehold.co/400x250"
-                alt="Task Management System screenshot"
-              />
+
+          <figure class="project-fig">
+            <a href="https://github.com/hebatulla" target="_blank" rel="noopener">
+              <img src="https://placehold.co/400x200" alt="Task Management System screenshot" />
             </a>
-            <figcaption>
-              <strong>Figure 1:</strong> Task Management System.
-            </figcaption>
+            <figcaption><strong>Figure 1:</strong> Task Management System</figcaption>
           </figure>
+
+          <a href="https://github.com/hebatulla" target="_blank" rel="noopener" class="btn-project">View on GitHub →</a>
         </section>
+
       </div>
-      <section id="contact">
+
+      <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
-        <p>
-          Ready to collaborate? Head over to the contact page to send me a
-          message.
-        </p>
-        <a href="contact.html">Go to Contact Form</a>
+        <p>Ready to collaborate? Head over to the contact page to send me a message.</p>
+        <a href="contact.html" class="btn-cta">Go to Contact Form →</a>
       </section>
+
     </main>
 
     <footer>
-      <address>
-        Email:
-        <a href="mailto:omer.abdulla@graduate.utm.my"
-          >omer.abdulla@graduate.utm.my</a
-        >
-      </address>
-      <p><small>&copy; 2026 Hebatulla Omer. All rights reserved.</small></p>
+      <div class="footer-inner">
+        <p class="footer-name">Hebatulla Omer</p>
+        <address>
+          <a href="mailto:omer.abdulla@graduate.utm.my">omer.abdulla@graduate.utm.my</a>
+        </address>
+        <p><small>&copy; 2026 Hebatulla Omer. All rights reserved.</small></p>
+      </div>
     </footer>
+
   </body>
 </html>
